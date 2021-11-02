@@ -104,6 +104,10 @@ footer{
 
     cursor: pointer;
 }
+.addedStrs{
+    margin: 16px 0;
+    font-size: 0.9rem;
+}
 
 @media screen and (min-width: 750px){
     header, main{

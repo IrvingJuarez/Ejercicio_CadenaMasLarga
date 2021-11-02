@@ -1,3 +1,5 @@
+import getLongestStr from "./getLongestStr.js";
+
 let strs = []
 const addedStrsContainer = document.querySelector(".addedStrs")
 
@@ -21,13 +23,15 @@ const renderInputs = () => {
         strs.push(strInput.value)
         addedStrsContainer.innerHTML += `<p>${strInput.value}</p>`
         strInput.value = ""
+        addBtn.disabled = true
 
         if(strs){
             runBtn.disabled = false
-        }   
+        }
     })
 
     runBtn.addEventListener("click", () => {
+        getLongestStr(strs)
         strs = []
     })
 }
