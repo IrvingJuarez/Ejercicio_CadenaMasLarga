@@ -109,6 +109,10 @@ footer{
     font-size: 0.9rem;
 }
 
+#try-again{
+    margin: 15px 0;
+}
+
 @media screen and (min-width: 750px){
     header, main{
         padding: 20px;

@@ -40,7 +40,7 @@ const clickHandler = (e) => {
     
     if(e.target.id == "chosen"){
         chosenHandler()
-    }else{
+    }else if(e.target.id == "random"){
         randomHandler()
     }
 }

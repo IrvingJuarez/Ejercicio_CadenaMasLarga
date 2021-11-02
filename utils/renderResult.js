@@ -1,5 +1,13 @@
 const result = document.querySelector(".result");
 const resultContainer = document.querySelector(".main-result")
+const tryAgainBtn = document.getElementById("try-again");
+
+tryAgainBtn.addEventListener("click", e => {
+    e.preventDefault()
+    e.stopPropagation()
+
+    console.log("Trying again")
+})
 
 const renderResult = (output) => {
     if(Object.prototype.toString.call(output) == '[object Object]'){
