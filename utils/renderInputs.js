@@ -1,4 +1,5 @@
 let strs = []
+const addedStrsContainer = document.querySelector(".addedStrs")
 
 const renderInputs = () => {
     let wordsForm = document.querySelector(".main-words")
@@ -18,6 +19,7 @@ const renderInputs = () => {
 
     addBtn.addEventListener("click", () => {
         strs.push(strInput.value)
+        addedStrsContainer.innerHTML += `<p>${strInput.value}</p>`
         strInput.value = ""
 
         if(strs){
