@@ -4,9 +4,14 @@ const tryAgainBtn = document.getElementById("try-again");
 
 tryAgainBtn.addEventListener("click", e => {
     e.preventDefault()
-    e.stopPropagation()
 
-    console.log("Trying again")
+    result.innerHTML = "";
+    resultContainer.classList.add("hidden")
+
+    if(!document.querySelector(".main-words").classList.contains("hidden")){
+        document.querySelector(".addedStrs").innerHTML = "";
+        document.querySelector(".main-words").classList.add("hidden")
+    }
 })
 
 const renderResult = (output) => {
