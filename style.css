@@ -83,6 +83,17 @@ footer{
     box-shadow: 2px 1px 4px;
 }
 
+.main-words > form{
+    display: flex;
+    flex-direction: column;
+}
+.main-words > input{
+    width: 300px;
+    padding: 7px;
+    border-radius: 6px;
+    font-size: 0.7rem;
+}
+
 @media screen and (min-width: 750px){
     header, main{
         padding: 20px;

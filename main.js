@@ -31,7 +31,8 @@ const randomHandler = async () => {
 }
 
 const chosenHandler = () => {
-    console.log("Chosen")
+    let wordsForm = document.querySelector(".main-words")
+    wordsForm.classList.remove("hidden")
 }
 
 const clickHandler = (e) => {
