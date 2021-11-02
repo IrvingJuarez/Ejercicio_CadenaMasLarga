@@ -16,6 +16,7 @@ const randomHandler = async () => {
     let apiURL = "http://api.wordnik.com/v4/words.json/randomWords?hasDictionaryDef=true&minCorpusCount=0&minLength=5&maxLength=15&limit=5&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5"
     
     try{
+        arr = []
         let response = await fetch(apiURL)
         let data = await response.json()
 
@@ -23,7 +24,7 @@ const randomHandler = async () => {
             arr.push(item.word)
         })
 
-        getLongestStr()
+        getLongestStr(arr)
     }catch(err){
         renderResult(true)
     }
