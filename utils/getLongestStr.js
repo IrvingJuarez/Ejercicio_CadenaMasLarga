@@ -1,3 +1,5 @@
+import renderResult from "./renderResult.js";
+
 let moreThanOne = []
 
 const getLongestStr = (arr) => {
@@ -27,7 +29,7 @@ const getLongestStr = (arr) => {
         result = longestStr
     }
 
-    console.log(result)
+    renderResult(result)
 }
 
 export default getLongestStr

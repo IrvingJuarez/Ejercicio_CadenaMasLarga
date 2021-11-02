@@ -21,7 +21,7 @@ const renderInputs = () => {
 
     addBtn.addEventListener("click", () => {
         strs.push(strInput.value)
-        addedStrsContainer.innerHTML += `<p>${strInput.value}</p>`
+        addedStrsContainer.innerHTML += `<p>${strInput.value} - ${strInput.value.length}</p>`
         strInput.value = ""
         addBtn.disabled = true
 
@@ -33,6 +33,7 @@ const renderInputs = () => {
     runBtn.addEventListener("click", () => {
         getLongestStr(strs)
         strs = []
+        runBtn.disabled = true
     })
 }
 
