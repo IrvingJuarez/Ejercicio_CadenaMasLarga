@@ -58,6 +58,9 @@ main > section{
 .hidden{
     display: none;
 }
+.err{
+    color: red;
+}
 
 footer{
     display: grid;
