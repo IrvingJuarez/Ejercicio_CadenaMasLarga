@@ -25,7 +25,7 @@ const randomHandler = async () => {
             arr.push(item.word)
         })
 
-        getLongestStr(arr)
+        getLongestStr(arr, true)
     }catch(err){
         renderResult(true)
     }

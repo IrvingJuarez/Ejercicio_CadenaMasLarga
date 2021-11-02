@@ -2,7 +2,7 @@ import renderResult from "./renderResult.js";
 
 let moreThanOne = []
 
-const getLongestStr = (arr) => {
+const getLongestStr = (arr, flag) => {
     let result, longestStr = ""
 
     arr.forEach(str => {
@@ -29,7 +29,14 @@ const getLongestStr = (arr) => {
         result = longestStr
     }
 
-    renderResult(result)
+    if(flag){
+        renderResult({
+            result: result,
+            words: arr
+        })
+    }else{
+        renderResult(result)
+    }
 }
 
 export default getLongestStr

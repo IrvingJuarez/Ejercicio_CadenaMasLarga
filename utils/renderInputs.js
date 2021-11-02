@@ -20,6 +20,7 @@ const renderInputs = () => {
     })
 
     addBtn.addEventListener("click", () => {
+        strInput.value = strInput.value.trim()
         strs.push(strInput.value)
         addedStrsContainer.innerHTML += `<p>${strInput.value} - ${strInput.value.length}</p>`
         strInput.value = ""
