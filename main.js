@@ -1,4 +1,5 @@
 import getLongestStr from "./utils/getLongestStr.js";
+import renderInputs from "./utils/renderInputs.js";
 
 let buttons = [...document.querySelectorAll(".btn")];
 let result = document.querySelector(".result")
@@ -31,8 +32,7 @@ const randomHandler = async () => {
 }
 
 const chosenHandler = () => {
-    let wordsForm = document.querySelector(".main-words")
-    wordsForm.classList.remove("hidden")
+    renderInputs()
 }
 
 const clickHandler = (e) => {
